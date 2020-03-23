@@ -1,0 +1,91 @@
+:root {
+	--bgdsec : #E84C3D;
+	--bgdmain : #ECF0F1;
+	--bgdcard : #FEFEFE;
+	--cardtitle:#94251E;
+	--cardtext : #868686;
+}
+* {
+    margin:0;
+    padding:0;
+    }
+
+html{
+    min-height: 100vh;
+}
+body{
+	height:100%;
+	width: 100%;
+}
+
+header{
+    background-color: var(--bgdsec);
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /*width: 100%;*/
+    box-shadow: 10px 5px 10px var(--cardtext);
+    /*height: 6em;*/
+    border-bottom: 2px solid var(--cardtitle);   
+}
+
+h1{
+    height:100%;
+    vertical-align: middle;
+    color: var(--bgdcard);
+    text-align: center;
+    font-size: 4em;
+}
+
+
+main{
+    width:100%;
+    background-color: var(--bgdmain);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-content: center;
+}
+
+.wrap{    
+    margin: auto;
+    width: min-content;    
+}
+
+.card{
+    background-color: var(--bgdcard);
+    max-width: 350px;
+    border-radius: 15px;    
+
+}
+
+.cardimg{
+    border-top: 1px inset var(--cardtext);
+    border-radius : 15px;
+    object-fit: cover;
+    width: 350px;
+}
+
+.content{
+    padding:15px 5px 15px 15px;
+    max-height: 500px;
+    overflow-y: scroll;  
+}
+.cardtitle{
+    color: var(--cardtitle);
+    margin: 15px 0px 15px 0px;
+}
+
+.cardtext{
+    color: var(--cardtext);
+}
+
+footer{
+    background-color: var(--bgdsec);    
+    box-shadow: -10px -5px 10px var(--cardtext);
+    border-top: 2px solid var(--cardtitle); 
+    padding: 2em;
+}
+footer p{    
+    color : var(--bgdcard);
+    font-size: 1em;
+    text-align: center;
+}
